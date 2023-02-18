@@ -1,0 +1,31 @@
+\problemname{Name Generation}
+
+\illustration{0.42}{bikea.png}{}
+
+Ingrid is the founder and CEO of bicycle retailer BIKEA. The company sells bicycles 
+for customers to assemble themselves.
+
+BIKEA has $N$ different bicycles to offer. Ingrid wants to give each of them 
+a human-readable name, to make it easy to remember. But doing this by hand is 
+a very time consuming task. 
+
+You are given the number $N$, and your task is to generate $N$ different names.
+To make the names readable, they must satisfy the following:
+
+\begin{enumerate}
+\item Each name has length between $3$ and $20$, and only consists of lowercase 
+English letters.
+\item Three consecutive letters of a name cannot all be vowels or consonants. 
+Here we consider \texttt{a}, \texttt{e}, \texttt{i}, \texttt{o}, \texttt{u} vowels, while the remaining
+$21$ letters are consonants.
+\end{enumerate}
+
+For example, \texttt{hello}, \texttt{abc}, and \texttt{lkab} are all valid names, whereas \texttt{ingrid}, 
+\texttt{bo} and \texttt{louise} are invalid. 
+
+\section*{Input}
+The input consists of one integer $N$ ($1 \leq N \leq 30000$), the number of names to generate.
+
+\section*{Output}
+Print $N$ lines, each of them containing a name. It can be proven that it is possible to generate
+ $N$ different names.
